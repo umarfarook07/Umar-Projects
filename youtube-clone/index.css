@@ -12,7 +12,9 @@ p{
     margin: 0;
     padding: 0;
 }
-
+button{
+    cursor: pointer;
+}
 .thumbnail{
     width: 300px;
     display: block;
