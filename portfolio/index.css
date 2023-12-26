@@ -213,8 +213,42 @@ body{
     bottom: 0;
     left: 0;
     color: white;
-    font-weight: bold;
-    
-
+    font-weight: bold;    
 }
 
+@media only screen and (max-width: 680px) {
+  .front-page {
+    padding: 8px;
+  }
+
+  .content {
+    flex-direction: column; 
+  }
+
+  .details-div {
+    flex-direction: column;
+  }
+
+  .info {
+    flex-direction: column; 
+    padding: 20px;
+  }
+
+  .info2 {
+    grid-template-columns: 1fr;
+  }
+
+  .dev-img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    margin-left: 0; 
+  }
+
+  .project-logo {
+    margin-left: 0;
+  }
+    }
