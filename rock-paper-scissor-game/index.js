@@ -58,6 +58,6 @@ function playGame(playerMove) {
         score.ties++;
     }
     document.querySelector('.js-result').innerHTML = result;
-    document.querySelector('.js-moves').innerHTML = `you <img class="move-img" src="/Umar-Projects/rock-paper-scissor-game/images/rock-emoji.png" alt=""><img class="move-img" src="/Umar-Projects/rock-paper-scissor-game/images/rock-emoji.png" alt="">Computer`;
+    document.querySelector('.js-moves').innerHTML = `you <img class="move-img" src="/Umar-Projects/rock-paper-scissor-game/images/${playerMove}-emoji.png" alt=""><img class="move-img" src="/Umar-Projects/rock-paper-scissor-game/images/${computerPickedMove}-emoji.png" alt="">Computer`;
     document.querySelector('.js-score').innerHTML = `wins: ${score.wins} loses:${score.loses} Ties: ${score.ties}`;
 }
