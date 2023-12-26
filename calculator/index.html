@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <div class="display js-input-box" id="display"></div>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button onclick="clearDisplay()" class="input-button js-input-button">C</button>
+                <button onclick="appendToDisplay('%')" class="input-button js-input-button">%</button>
+                <button onclick="backspace()" class="input-button js-input-button">&#x232B;</button>
+                <button onclick="appendToDisplay('/')" class="input-button js-input-button sign">/</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay('7')" class="input-button js-input-button">7</button>
+                <button onclick="appendToDisplay('8')" class="input-button js-input-button">8</button>
+                <button onclick="appendToDisplay('9')" class="input-button js-input-button">9</button>
+                <button onclick="appendToDisplay('*')" class="input-button js-input-button sign">x</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay('4')" class="input-button js-input-button">4</button>
+                <button onclick="appendToDisplay('5')" class="input-button js-input-button">5</button>
+                <button onclick="appendToDisplay('6')" class="input-button js-input-button">6</button>
+                <button onclick="appendToDisplay('-')" class="input-button js-input-button sign">-</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay('1')" class="input-button js-input-button">1</button>
+                <button onclick="appendToDisplay('2')" class="input-button js-input-button">2</button>
+                <button onclick="appendToDisplay('3')" class="input-button js-input-button">3</button>
+                <button onclick="appendToDisplay('+')" class="input-button js-input-button sign">+</button> 
+            </div>
+            <div class="last-row">
+                <button onclick="appendToDisplay('0')" class="input-button js-input-button zero">0</button>
+                <button onclick="appendToDisplay('.')" class="input-button js-input-button">.</button>
+                <button onclick="calculateResult()" class="input-button js-input-button sign">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

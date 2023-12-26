@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-grid,
+.todo-list-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.todo-input,
+.todo-date{
+    padding: 12px 6px;
+    font-size: 18px;   
+    border-radius: 5px; 
+    border: 1px solid black;
+}
+
+.add-button{
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.delete-button{
+    background-color: darkred;
+    border: none;
+    font-size: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+button{
+    cursor: pointer;
+}
+.todo-grid div{
+    display: flex;
+    justify-content: space-between;
+}
+.todo-grid div:hover{
+    background-color: lightgray;
+}

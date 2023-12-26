@@ -1,0 +1,39 @@
+p{
+    margin: 0;
+    color: white;
+    font-size: 22px;
+}
+body{
+    background-color: black;
+    margin-left: 18px;
+}
+.move-button{
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.move-img{
+    height: 70px;
+}
+
+.result{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 70px;
+}
+
+.moves{
+    margin-bottom: 18px;
+}
+
+.score{
+    margin-top: 120px;
+}
+
