@@ -43,10 +43,32 @@ body{
 }
 
 .my-cart{
-    //height: 30px;
+    
 }
 .my-cart-button{
     padding: 5px;
     cursor: pointer;
 }
 
+.main-container{
+    margin: 0 50px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.container-head{
+    margin-bottom: 15px;
+}
+
+.product-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-product{
+    background-color: lightpink;
+    display: flex;
+}
+
+.right-product{
+    background-color: lightblue;
+}
