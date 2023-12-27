@@ -92,11 +92,6 @@ body{
     flex: 1;
 }
 
-
-Your existing code seems well-organized and clean. If you want to create two grids with sizes of 75% and 25%, you can modify the grid-template-columns property in the .product-container class. Here's an updated version of your CSS to achieve the desired layout:
-
-css
-Copy code
 .product-container {
     display: grid;
     grid-template-columns: 3fr 1fr; /* 75% and 25% */
@@ -140,6 +135,7 @@ Copy code
     height: 400px;
     margin-right: 10px;
     flex: 6; 
+    min-width: 300px;
 }
 
 .right-product {
@@ -147,6 +143,7 @@ Copy code
     grid-template-columns: 1fr;
     row-gap: 10px;
     flex: 4; 
+    min-width: 300px;
 }
 
 .product {
@@ -159,6 +156,7 @@ Copy code
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    object-position: left;
 }
 
 .right-product img {
@@ -166,6 +164,7 @@ Copy code
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    object-position: left;
 }
 
 .container-head button{
