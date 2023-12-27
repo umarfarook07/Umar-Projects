@@ -65,10 +65,28 @@ body{
 }
 
 .left-product{
-    background-color: lightpink;
     display: flex;
+    height: 200px;
 }
 
 .right-product{
-    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.product{
+    background-color: lightgreen;
+    height: 100px;
+}
+
+.left-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
