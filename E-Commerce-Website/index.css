@@ -5,12 +5,20 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(249, 246, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(249, 246, 241);
 }
 
 .logo span{
@@ -27,66 +35,152 @@ body{
 
 .right-section div{
     margin-right: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 .search-bar{
-    height: 24px;
+    height: 42px;
+    border: none;
+    background-color: rgb(250, 250, 250);
+    width: 400px;
+    font-size: 22px;
 }
 .search-button{
-    height: 30px;
-    margin-left: -5px;
+    height: 44px;
+    margin-left: -5pxpx;
     cursor: pointer;
+    border: none;
+    background-color:rgb(250, 250, 250);
+    margin-right: 20px;
 }
 
 .search-box{
     display: flex;
     flex-direction: row;
+    flex: 1;
 }
 
 .my-cart{
     
 }
 .my-cart-button{
-    padding: 5px;
+    padding: 8px 16px;
     cursor: pointer;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main-container{
     margin: 0 50px;
     padding: 10px;
     border: 1px solid black;
+    max-width: 1080px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
 }
 .container-head{
     margin-bottom: 15px;
 }
 
-.product-container{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+.product-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 75% and 25% */
+    flex: 1;
 }
 
-.left-product{
+
+Your existing code seems well-organized and clean. If you want to create two grids with sizes of 75% and 25%, you can modify the grid-template-columns property in the .product-container class. Here's an updated version of your CSS to achieve the desired layout:
+
+css
+Copy code
+.product-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 75% and 25% */
+    flex: 1;
+}
+
+.left-product {
     display: flex;
-    height: 200px;
+    height: 400px;
+    margin-right: 10px;
+    flex: 3;
 }
 
-.right-product{
+.right-product {
     display: grid;
     grid-template-columns: 1fr;
-    
+    row-gap: 10px;
+    flex: 1;
 }
-.product{
+
+.product {
     background-color: lightgreen;
-    height: 100px;
+    height: 195px;
 }
 
 .left-product img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 6fr 4fr; 
+    flex: 1;
+}
+
+.left-product {
+    display: flex;
+    height: 400px;
+    margin-right: 10px;
+    flex: 6; 
+}
+
+.right-product {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    flex: 4; 
+}
+
+.product {
+    background-color: lightgreen;
+    height: 195px;
+}
+
+.left-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .right-product img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+}
+
+.container-head button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    transition: background-color 0.15s,color 0.15s,border-radius 0.15s;
+    padding: 5px 10px;
+
+}
+
+.container-head button:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
