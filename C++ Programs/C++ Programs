@@ -1,1 +1,15 @@
-Hello
+//Default Arguments Program
+//28-Dec 2023
+
+#include<iostream>
+using namespace std;
+int calculateArea(int length=5, int breadth=3){
+    return length * breadth;
+}
+
+int main(){
+
+    cout << calculateArea() << endl;
+    return 0;
+
+}
