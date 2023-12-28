@@ -14,3 +14,40 @@ int main(){
     return 0;
 
 }
+
+//Program 2
+//Default Arguments Program
+//28-Dec 2023
+#include<iostream>
+using namespace std;
+
+int Calculate(int a, int b, string operation = "add", int power = 1) {
+    int result = 0;
+    int originalResult = 0;
+
+    if (operation == "sub")
+        result = a - b;
+    else if (operation == "multiply")
+        result = a * b;
+    else if (operation == "div") {
+        if (b != 0) {
+            result = a / b;
+        } else {
+            cout << "Error: Division by zero" << endl;
+            return 0;
+        }
+    } else
+        result = a + b;
+    originalResult = result;
+    while (power != 1) {
+        result =result * originalResult;
+        power--;
+    }
+    return result;
+}
+
+int main() {
+    cout << Calculate(10,2,"multiply",3) << endl;
+    return 0;
+}
+
