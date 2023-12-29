@@ -66,6 +66,19 @@ body {
 
 }
 
+.main-details{
+    display: flex;
+    flex-direction: row;
+    //justify-content: center;
+    align-items: center;
+}
+
+.main-details img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
 .contact-me {
 
     width: 120px;
@@ -97,7 +110,7 @@ body {
     font-size: 10px;
     color: grey;
 }
-
+/*
 .second-page {
     background-color: rgb(16, 16, 16);
     display: flex;
@@ -165,9 +178,10 @@ body {
     margin-top: 8px;
     cursor: pointer;
 }
-
+*/
 .third-page {
     background-color: rgb(16, 16, 16);
+    padding: ;
 }
 
 .projects {
@@ -180,8 +194,7 @@ body {
     row-gap: 10px;
 }
 
-.project-logo,
-.skills-logo{
+.project-logo{
     margin-left: 70px;
     color: white;
     font-weight: bold;
@@ -221,8 +234,7 @@ body {
     text-decoration:none;
 }
 
-.project-logo,
-.skills-logo{
+.project-logo{
     font-family: 'Londrina Outline', sans-serif;
     font-weight: lighter;
     font-size: 100px;
@@ -248,44 +260,6 @@ body {
 
 .fourth-page {
     background-color: rgb(16, 16, 16);
-}
-
-.skills-page{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.dev-skills{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.dev-skills .heading{
-    color: white;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.skills-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    column-gap: 20px;
-    padding: 20px;
-}
-
-.skill{
-    padding: 10px;
-}
-.skill:hover{
-    background-color: rgb(42, 42, 42);
-}
-
-.skills-logo{
-    display: flex;
-    justify-content: center;
 }
 
 @media only screen and (max-width: 680px) {
