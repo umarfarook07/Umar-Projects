@@ -180,7 +180,8 @@ body {
     row-gap: 10px;
 }
 
-.project-logo {
+.project-logo,
+.skills-logo{
     margin-left: 70px;
     color: white;
     font-weight: bold;
@@ -188,8 +189,6 @@ body {
     margin-bottom: 20px;
 
 }
-
-.projects:hover {}
 
 .project-info {
     display: flex;
@@ -219,14 +218,15 @@ body {
 .project-name {
     color: white;
     font-size: 22px;
+    text-decoration:none;
 }
 
-.project-logo {
+.project-logo,
+.skills-logo{
     font-family: 'Londrina Outline', sans-serif;
     font-weight: lighter;
     font-size: 100px;
     position: relative;
-    opacity: 0.3;
 }
 
 .project-heading {
@@ -243,6 +243,7 @@ body {
 
 .project-link {
     color: white;
+    text-decoration: none;
 }
 
 .fourth-page {
@@ -254,15 +255,7 @@ body {
     flex-direction: column;
 }
 
-.skills-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgb(11, 124, 84);
-    font-size: 40px;
-    font-family: 'Orbitron', sans-serif;
-    padding: 20px;
-}
+
 .dev-skills{
     display: flex;
     justify-content: center;
@@ -290,3 +283,82 @@ body {
     background-color: rgb(42, 42, 42);
 }
 
+.skills-logo{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 680px) {
+  .front-page {
+    padding: 8px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .details-div {
+    flex-direction: column;
+  }
+
+  .info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .info2 {
+    grid-template-columns: 1fr;
+  }
+
+  .dev-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .project-logo {
+    margin-left: 0;
+  }
+}
+
+
+@media only screen and (max-width: 680px) {
+    .front-page {
+      padding: 8px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .details-div {
+      flex-direction: column;
+    }
+  
+    .info {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .info2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .dev-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+      margin-left: 0;
+    }
+  
+    .project-logo {
+      margin-left: 0;
+    }
+  }
