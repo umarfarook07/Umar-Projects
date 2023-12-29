@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My HTML Page</title>
+</head>
+
+<body>
+
+  <h1>Main Heading</h1>
+
+  <p>This is a paragraph with <strong>strong</strong> and <em>emphasized</em> text.</p>
+
+  <h2>Subheading</h2>
+
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+
+</body>
+
+</html>
