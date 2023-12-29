@@ -1,52 +1,61 @@
-p{
-    
+p {
+
     font-family: 'Afacad', sans-serif;
     margin: 0;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-.front-page{
+
+.front-page {
     background-color: rgb(42, 42, 42);
     padding: 12px;
-    
+
 }
-.logo{
+
+.logo {
     width: 300px;
 }
-.header{
+
+.header {
     display: flex;
-    justify-content:end;
-    align-items: center;  
+    justify-content: end;
+    align-items: center;
     padding: 20px;
 }
-.logo-pic{
+
+.logo-pic {
     height: 50px;
     width: 100%;
     object-fit: cover;
 }
-.options-div{
+
+.options-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.option{
+.option {
     margin: 0px 10px;
     cursor: pointer;
     color: white;
     font-size: small;
 }
-.description{
+
+.description {
     font-size: 22px;
 }
-.job{
+
+.job {
     font-size: 34px;
     font-weight: bold;
 }
-.dev-info{
+
+.dev-info {
     display: flex;
     margin: 70px 0px;
     flex-direction: column;
@@ -57,100 +66,111 @@ body{
 
 }
 
-.contact-me{
+.contact-me {
 
     width: 120px;
     background-color: rgb(11, 124, 84);
     border: none;
     padding: 10px 0px;
     color: white;
-    font-family: ;font-family: 'Afacad', sans-serif;
+    font-family: ;
+    font-family: 'Afacad', sans-serif;
     margin-top: 8px;
     cursor: pointer;
 }
 
-.details-div{
+.details-div {
     display: flex;
 }
-.details{
+
+.details {
     padding: 12px 24px
 }
-.top-text{
+
+.top-text {
     color: white;
     font-size: 12px;
     margin-bottom: 8px;
 }
 
-.bottom-text{
+.bottom-text {
     font-size: 10px;
     color: grey;
 }
-.second-page{
+
+.second-page {
     background-color: rgb(16, 16, 16);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.info{
+
+.info {
     display: flex;
     padding: 50px 100px;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 
 }
-.who-am-i{
+
+.who-am-i {
     color: darkgreen;
     font-weight: bold;
 }
-.dev-details{
+
+.dev-details {
     color: white;
-    margin-left:24px;
+    margin-left: 24px;
 }
 
-.info2{
+.info2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
 }
-.form{
+
+.form {
     font-size: 12px;
 }
-.about{
+
+.about {
     font-size: 28px;
     font-weight: bold;
     line-height: 30px;
     margin-bottom: 12px;
 }
 
-.information{
+.information {
     font-size: 22px;
     color: lightgray;
 }
 
-.dev-img{
+.dev-img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 4px;
 }
 
-.download{
+.download {
     width: 120px;
     background-color: rgb(11, 124, 84);
     border: none;
     padding: 8px 0px;
     color: white;
-    font-family: ;font-family: 'Afacad', sans-serif;
+    font-family: ;
+    font-family: 'Afacad', sans-serif;
     margin-top: 8px;
     cursor: pointer;
 }
-.third-page{
+
+.third-page {
     background-color: rgb(16, 16, 16);
 }
 
-.projects{
+.projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 12px 20px;
@@ -160,95 +180,113 @@ body{
     row-gap: 10px;
 }
 
-.project-logo{
+.project-logo {
     margin-left: 70px;
     color: white;
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 20px;
-    
+
 }
 
-.projects:hover{
-    
-}
-.project-info{
+.projects:hover {}
+
+.project-info {
     display: flex;
     flex-direction: column;
     color: white;
     display: flex;
     padding: 20px;
-    background-color: rgb(22,22,22);
+    background-color: rgb(22, 22, 22);
 }
-.project-info:hover{
-    background-color: rgb(22,22,22);
+
+.project-info:hover {
+    background-color: rgb(22, 22, 22);
 }
-.project-container{
+
+.project-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.project-details{
+.project-details {
     font-size: 16px;
     color: gray;
 }
-.project-name{
+
+.project-name {
     color: white;
     font-size: 22px;
 }
 
-.project-logo{
+.project-logo {
     font-family: 'Londrina Outline', sans-serif;
     font-weight: lighter;
     font-size: 100px;
     position: relative;
     opacity: 0.3;
 }
-.project-heading{
+
+.project-heading {
     position: absolute;
-    font-family:'Afacad', sans-serif ;
+    font-family: 'Afacad', sans-serif;
     font-size: 60px;
     bottom: 0;
     left: 0;
     color: white;
-    font-weight: bold;    
+    font-weight: bold;
+
+
 }
 
-@media only screen and (max-width: 680px) {
-  .front-page {
-    padding: 8px;
-  }
+.project-link {
+    color: white;
+}
 
-  .content {
-    flex-direction: column; 
-  }
+.fourth-page {
+    background-color: rgb(16, 16, 16);
+}
 
-  .details-div {
+.skills-page{
+    display: flex;
     flex-direction: column;
-  }
+}
 
-  .info {
-    flex-direction: column; 
+.skills-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(11, 124, 84);
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
     padding: 20px;
-  }
+}
+.dev-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-  .info2 {
-    grid-template-columns: 1fr;
-  }
+.dev-skills .heading{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
 
-  .dev-img {
-    width: 100%;
-    height: auto; 
-  }
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    column-gap: 20px;
+    padding: 20px;
+}
 
-  .projects {
-    grid-template-columns: 1fr;
-    margin-left: 0; 
-  }
+.skill{
+    padding: 10px;
+}
+.skill:hover{
+    background-color: rgb(42, 42, 42);
+}
 
-  .project-logo {
-    margin-left: 0;
-  }
-    }
