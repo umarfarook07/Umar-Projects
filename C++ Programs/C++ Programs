@@ -1,53 +1,861 @@
-//Program 1
-//Default Arguments Program
-//28-Dec 2023
+//Write programs using input and output operators and comments.
+#include <iostream>
 
-#include<iostream>
-using namespace std;
-int calculateArea(int length=5, int breadth=3){
-    return length * breadth;
-}
+int main() {
+    // This program calculates the area of a rectangle
 
-int main(){
+    // Input: Get length and width from the user
+    std::cout << "Enter the length of the rectangle: ";
+    double length;
+    std::cin >> length;
 
-    cout << calculateArea() << endl;
+    std::cout << "Enter the width of the rectangle: ";
+    double width;
+    std::cin >> width;
+
+    // Process: Calculate the area
+    double area = length * width;
+
+    // Output: Display the result
+    std::cout << "Area of the rectangle: " << area << std::endl;
+
     return 0;
-
 }
+//Write programs using if/ if – else/ nested if statement.
+#include <iostream>
 
-//Program 2
-//Default Arguments Program
-//28-Dec 2023
-#include<iostream>
 using namespace std;
 
-int Calculate(int a, int b, string operation = "add", int power = 1) {
-    int result = 0;
-    int originalResult = 0;
+int main() {
+    // This program determines the grade based on a student's score
 
-    if (operation == "sub")
-        result = a - b;
-    else if (operation == "multiply")
-        result = a * b;
-    else if (operation == "div") {
-        if (b != 0) {
-            result = a / b;
-        } else {
-            cout << "Error: Division by zero" << endl;
-            return 0;
-        }
-    } else
-        result = a + b;
-    originalResult = result;
-    while (power != 1) {
-        result =result * originalResult;
-        power--;
+    // Input: Get the score from the user
+    cout << "Enter the student's score: ";
+    int score;
+    cin >> score;
+
+    // Process and Output: Determine the grade
+    if (score >= 90) {
+        cout << "Grade: A" << endl;
+    } else if (score >= 80) {
+        cout << "Grade: B" << endl;
+    } else if (score >= 70) {
+        cout << "Grade: C" << endl;
+    } else if (score >= 60) {
+        cout << "Grade: D" << endl;
+    } else {
+        cout << "Grade: F" << endl;
     }
-    return result;
+
+    // Nested if statement: Check for excellence if the grade is A
+    if (score >= 90) {
+        cout << "Excellent performance!" << endl;
+    }
+
+    return 0;
+}
+
+//Write programs using loop statements – while/ do-while / for.
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // This program demonstrates while, do-while, and for loops
+
+    // Example 1: while loop - print numbers from 1 to 5
+    int i = 1;
+    cout << "Example 1: while loop\n";
+    while (i <= 5) {
+        cout << i << " ";
+        i++;
+    }
+    cout << "\n\n";
+
+    // Example 2: do-while loop - print numbers from 1 to 5
+    i = 1;
+    cout << "Example 2: do-while loop\n";
+    do {
+        cout << i << " ";
+        i++;
+    } while (i <= 5);
+    cout << "\n\n";
+
+    // Example 3: for loop - print numbers from 1 to 5
+    cout << "Example 3: for loop\n";
+    for (int j = 1; j <= 5; j++) {
+        cout << j << " ";
+    }
+    cout << "\n";
+
+    return 0;
+}
+
+
+//Write programs using arrays.
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // This program calculates the sum of elements in an array
+
+    const int size = 5;
+    int numbers[size] = {1, 2, 3, 4, 5};
+
+    // Calculate the sum of elements in the array
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += numbers[i];
+    }
+
+    // Display the result
+    cout << "Sum of elements in the array: " << sum << endl;
+
+    return 0;
+}
+
+//Write programs using classes & object.
+#include <iostream>
+
+using namespace std;
+
+// Class definition
+class Rectangle {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor
+    Rectangle(double l, double w) : length(l), width(w) {}
+
+    // Method to calculate area
+    double calculateArea() {
+        return length * width;
+    }
+
+    // Method to display information
+    void displayInfo() {
+        cout << "Rectangle - Length: " << length << ", Width: " << width << endl;
+        cout << "Area: " << calculateArea() << endl;
+    }
+};
+
+int main() {
+    // Creating objects of the Rectangle class
+    Rectangle rectangle1(4.5, 6.2);
+    Rectangle rectangle2(3.0, 5.0);
+
+    // Displaying information about the rectangles
+    cout << "Information about Rectangle 1:\n";
+    rectangle1.displayInfo();
+
+    cout << "\nInformation about Rectangle 2:\n";
+    rectangle2.displayInfo();
+
+    return 0;
+}
+
+//Write programs using constructor and destructor.
+#include <iostream>
+
+using namespace std;
+
+// Class definition
+class Rectangle {
+private:
+    double length;
+    double width;
+
+public:
+    // Parameterized constructor
+    Rectangle(double l, double w) : length(l), width(w) {
+        cout << "Parameterized constructor called" << endl;
+    }
+
+    // Default constructor
+    Rectangle() : length(0.0), width(0.0) {
+        cout << "Default constructor called" << endl;
+    }
+
+    // Destructor
+    ~Rectangle() {
+        cout << "Destructor called" << endl;
+    }
+
+    // Member function to display dimensions
+    void displayDimensions() {
+        cout << "Length: " << length << ", Width: " << width << endl;
+    }
+};
+
+int main() {
+    // Creating objects using different constructors
+    Rectangle rectangle1(4.5, 6.2);  // Parameterized constructor
+    Rectangle rectangle2;            // Default constructor
+
+    // Calling a member function
+    rectangle1.displayDimensions();
+    rectangle2.displayDimensions();
+
+    // Destructor will be called automatically when the objects go out of scope
+
+    return 0;
+}
+
+//Write programs working with two/more classes using Friend function.
+
+#include <iostream>
+
+using namespace std;
+
+// Forward declaration of the second class
+class B;
+
+// Class A declaration
+class A {
+private:
+    int dataA;
+
+public:
+    A(int a) : dataA(a) {}
+
+    // Friend function declaration
+    friend void addData(A objA, B objB);
+};
+
+// Class B declaration
+class B {
+private:
+    int dataB;
+
+public:
+    B(int b) : dataB(b) {}
+
+    // Friend function declaration
+    friend void addData(A objA, B objB);
+};
+
+// Friend function definition
+void addData(A objA, B objB) {
+    int sum = objA.dataA + objB.dataB;
+    cout << "Sum of dataA and dataB: " << sum << endl;
 }
 
 int main() {
-    cout << Calculate(10,2,"multiply",3) << endl;
+    // Creating objects of both classes
+    A objA(5);
+    B objB(10);
+
+    // Calling the friend function
+    addData(objA, objB);
+
     return 0;
 }
 
+//Write programs using inline function.
+
+
+#include <iostream>
+
+using namespace std;
+
+// Inline function to calculate the square of a number
+inline double square(double x) {
+    return x * x;
+}
+
+int main() {
+    // Using the inline function to calculate squares
+    double num1 = 5.0;
+    double num2 = 7.5;
+
+    cout << "Square of " << num1 << " is: " << square(num1) << endl;
+    cout << "Square of " << num2 << " is: " << square(num2) << endl;
+
+    return 0;
+}
+
+//Write a program to pass an object as a functions argument – pass object by Value, pass object by reference.
+
+#include <iostream>
+
+using namespace std;
+
+// Class definition
+class Rectangle {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor
+    Rectangle(double l, double w) : length(l), width(w) {}
+
+    // Function to display dimensions
+    void displayDimensions() {
+        cout << "Length: " << length << ", Width: " << width << endl;
+    }
+
+    // Function to set dimensions (used for demonstration)
+    void setDimensions(double l, double w) {
+        length = l;
+        width = w;
+    }
+};
+
+// Function to modify an object by value
+void modifyByValue(Rectangle rect) {
+    // Modifying the object (changes won't affect the original)
+    rect.setDimensions(3.0, 4.0);
+}
+
+// Function to modify an object by reference
+void modifyByReference(Rectangle &rect) {
+    // Modifying the object (changes will affect the original)
+    rect.setDimensions(5.0, 6.0);
+}
+
+int main() {
+    // Creating an object of the Rectangle class
+    Rectangle myRectangle(2.0, 3.0);
+
+    cout << "Original Dimensions:\n";
+    myRectangle.displayDimensions();
+
+    // Passing the object by value
+    modifyByValue(myRectangle);
+
+    cout << "\nAfter modifyByValue:\n";
+    myRectangle.displayDimensions();  // No change
+
+    // Passing the object by reference
+    modifyByReference(myRectangle);
+
+    cout << "\nAfter modifyByReference:\n";
+    myRectangle.displayDimensions();  // Modified
+
+    return 0;
+}
+
+
+//Write a program to demonstrate the use of function overloading.
+
+#include <iostream>
+
+using namespace std;
+
+// Function to add two integers
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function to add three integers
+int add(int a, int b, int c) {
+    return a + b + c;
+}
+
+// Function to add two doubles
+double add(double a, double b) {
+    return a + b;
+}
+
+int main() {
+    // Calling the overloaded functions
+    cout << "Sum of two integers: " << add(5, 7) << endl;
+    cout << "Sum of three integers: " << add(3, 8, 2) << endl;
+    cout << "Sum of two doubles: " << add(4.2, 6.5) << endl;
+
+    return 0;
+}
+
+//Write a simple program on array of objects and pointers to objects.
+#include <iostream>
+
+using namespace std;
+
+// Class definition
+class Student {
+private:
+    string name;
+    int age;
+
+public:
+    // Constructor
+    Student(string n, int a) : name(n), age(a) {}
+
+    // Function to display student information
+    void displayInfo() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+int main() {
+    // Creating an array of objects
+    const int arraySize = 3;
+    Student studentsArray[arraySize] = {
+        Student("Alice", 20),
+        Student("Bob", 22),
+        Student("Charlie", 21)
+    };
+
+    // Displaying information using array of objects
+    cout << "Information using array of objects:\n";
+    for (int i = 0; i < arraySize; ++i) {
+        studentsArray[i].displayInfo();
+    }
+
+    // Creating an array of pointers to objects
+    Student* studentsPtrArray[arraySize];
+    studentsPtrArray[0] = new Student("David", 19);
+    studentsPtrArray[1] = new Student("Eva", 23);
+    studentsPtrArray[2] = new Student("Frank", 20);
+
+    // Displaying information using array of pointers to objects
+    cout << "\nInformation using array of pointers to objects:\n";
+    for (int i = 0; i < arraySize; ++i) {
+        studentsPtrArray[i]->displayInfo();
+    }
+
+    // Deallocating memory for objects created with 'new'
+    for (int i = 0; i < arraySize; ++i) {
+        delete studentsPtrArray[i];
+    }
+
+    return 0;
+}
+
+//Write a program to demonstrate the operator overloading on unary &binary operators
+
+#include <iostream>
+
+using namespace std;
+
+// Class definition
+class Complex {
+private:
+    double real;
+    double imag;
+
+public:
+    // Constructor
+    Complex(double r = 0.0, double i = 0.0) : real(r), imag(i) {}
+
+    // Unary operator overloading (negation)
+    Complex operator-() const {
+        return Complex(-real, -imag);
+    }
+
+    // Binary operator overloading (addition)
+    Complex operator+(const Complex& other) const {
+        return Complex(real + other.real, imag + other.imag);
+    }
+
+    // Function to display complex number
+    void display() const {
+        cout << "Real: " << real << ", Imaginary: " << imag << endl;
+    }
+};
+
+int main() {
+    // Creating complex numbers
+    Complex c1(3.0, 2.0);
+    Complex c2(1.5, 4.0);
+
+    // Unary operator overloading (negation)
+    Complex resultUnary = -c1;
+
+    cout << "Unary Operator Overloading (Negation):\n";
+    cout << "Original Complex Number:\n";
+    c1.display();
+    cout << "Result after negation:\n";
+    resultUnary.display();
+    cout << "\n";
+
+    // Binary operator overloading (addition)
+    Complex resultBinary = c1 + c2;
+
+    cout << "Binary Operator Overloading (Addition):\n";
+    cout << "Complex Number 1:\n";
+    c1.display();
+    cout << "Complex Number 2:\n";
+    c2.display();
+    cout << "Result after addition:\n";
+    resultBinary.display();
+
+    return 0;
+}
+
+//Write programs using new, delete with classes.
+#include <iostream>
+
+using namespace std;
+
+// Class definition
+class Person {
+private:
+    string name;
+    int age;
+
+public:
+    // Constructor
+    Person(string n, int a) : name(n), age(a) {}
+
+    // Function to display person information
+    void displayInfo() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+
+    // Destructor
+    ~Person() {
+        cout << "Destructor called for: " << name << endl;
+    }
+};
+
+int main() {
+    // Using new and delete with classes
+
+    // Creating an object using new
+    Person* personPtr = new Person("John", 25);
+
+    // Displaying information using the object
+    cout << "Person Information:\n";
+    personPtr->displayInfo();
+
+    // Deallocating memory using delete
+    delete personPtr;
+
+    return 0;
+}
+
+//Write simple programs illustrating use of all types of inheritances.
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// Base class
+class Animal {
+protected:
+    string name;
+
+public:
+    Animal(const string& n) : name(n) {}
+
+    void eat() const {
+        cout << name << " is eating." << endl;
+    }
+
+    void sleep() const {
+        cout << name << " is sleeping." << endl;
+    }
+};
+
+// Single Inheritance: Dog is derived from Animal
+class Dog : public Animal {
+public:
+    Dog(const string& n) : Animal(n) {}
+
+    void bark() const {
+        cout << name << " is barking." << endl;
+    }
+};
+
+// Multiple Inheritance: Pegasus is derived from Horse and Bird
+class Horse {
+protected:
+    string horseName;
+
+public:
+    Horse(const string& n) : horseName(n) {}
+
+    void gallop() const {
+        cout << horseName << " is galloping." << endl;
+    }
+};
+
+class Bird {
+protected:
+    string birdName;
+
+public:
+    Bird(const string& n) : birdName(n) {}
+
+    void fly() const {
+        cout << birdName << " is flying." << endl;
+    }
+};
+
+class Pegasus : public Horse, public Bird {
+public:
+    Pegasus(const string& n) : Horse(n + " (Horse part)"), Bird(n + " (Bird part)"), Animal(n) {}
+
+    void displayInfo() const {
+        cout << "Pegasus's name: " << name << endl;
+    }
+};
+
+// Hierarchical Inheritance: Cat and Tiger are derived from Animal
+class Cat : public Animal {
+public:
+    Cat(const string& n) : Animal(n) {}
+
+    void purr() const {
+        cout << name << " is purring." << endl;
+    }
+};
+
+class Tiger : public Animal {
+public:
+    Tiger(const string& n) : Animal(n) {}
+
+    void roar() const {
+        cout << name << " is roaring." << endl;
+    }
+};
+
+// Hybrid Inheritance: Lion is derived from Tiger and Cat
+class Lion : public Tiger, public Cat {
+public:
+    Lion(const string& n) : Tiger(n + " (Tiger part)"), Cat(n + " (Cat part)"), Animal(n) {}
+
+    void displayInfo() const {
+        cout << "Lion's name: " << name << endl;
+    }
+};
+
+int main() {
+    // Single Inheritance
+    Dog myDog("Buddy");
+    myDog.bark();
+    myDog.eat();
+    myDog.sleep();
+
+    // Multiple Inheritance
+    Pegasus myPegasus("Stormy");
+    myPegasus.displayInfo();
+    myPegasus.gallop();
+    myPegasus.fly();
+
+    // Hierarchical Inheritance
+    Cat myCat("Whiskers");
+    myCat.purr();
+    myCat.eat();
+    myCat.sleep();
+
+    Tiger myTiger("Stripes");
+    myTiger.roar();
+    myTiger.eat();
+    myTiger.sleep();
+
+    // Hybrid Inheritance
+    Lion myLion("Simba");
+    myLion.displayInfo();
+    myLion.roar();
+    myLion.purr();
+    myLion.eat();
+    myLion.sleep();
+
+    return 0;
+}
+//Write a program to illustrate virtual base class.
+#include <iostream>
+
+using namespace std;
+
+// Virtual base class
+class Animal {
+public:
+    virtual void speak() const {
+        cout << "Animal speaks" << endl;
+    }
+};
+
+// Derived class 1
+class Dog : virtual public Animal {
+public:
+    void speak() const override {
+        cout << "Dog barks" << endl;
+    }
+};
+
+// Derived class 2
+class Cat : virtual public Animal {
+public:
+    void speak() const override {
+        cout << "Cat meows" << endl;
+    }
+};
+
+// Derived class combining Dog and Cat
+class DogCat : public Dog, public Cat {
+public:
+    // If we comment out this function, it will cause ambiguity
+    void speak() const override {
+        // Calling the speak function of the virtual base class
+        Animal::speak();
+    }
+};
+
+int main() {
+    // Creating an object of the derived class
+    DogCat myPet;
+
+    // Calling the speak function
+    myPet.speak();
+
+    return 0;
+}
+
+//Write a Program to illustrate virtual functions.
+#include <iostream>
+
+using namespace std;
+
+// Base class
+class Shape {
+public:
+    // Virtual function for calculating area
+    virtual double calculateArea() const {
+        cout << "Calculating area in base class (Shape)" << endl;
+        return 0.0;
+    }
+};
+
+// Derived class 1
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    // Constructor
+    Circle(double r) : radius(r) {}
+
+    // Overriding the virtual function
+    double calculateArea() const override {
+        cout << "Calculating area in Circle class" << endl;
+        return 3.14 * radius * radius;
+    }
+};
+
+// Derived class 2
+class Rectangle : public Shape {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor
+    Rectangle(double l, double w) : length(l), width(w) {}
+
+    // Overriding the virtual function
+    double calculateArea() const override {
+        cout << "Calculating area in Rectangle class" << endl;
+        return length * width;
+    }
+};
+
+int main() {
+    // Creating objects of derived classes
+    Circle circle(5.0);
+    Rectangle rectangle(4.0, 6.0);
+
+    // Using pointers to base class to demonstrate polymorphism
+    Shape* shapePtr1 = &circle;
+    Shape* shapePtr2 = &rectangle;
+
+    // Calling virtual function to calculate area
+    cout << "Area of Circle: " << shapePtr1->calculateArea() << endl;
+    cout << "Area of Rectangle: " << shapePtr2->calculateArea() << endl;
+
+    return 0;
+}
+
+
+//Write a Program to illustrate class templates.
+#include <iostream>
+
+using namespace std;
+
+// Base class
+class Shape {
+public:
+    // Virtual function for calculating area
+    virtual double calculateArea() const {
+        cout << "Calculating area in base class (Shape)" << endl;
+        return 0.0;
+    }
+};
+
+// Derived class 1
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    // Constructor
+    Circle(double r) : radius(r) {}
+
+    // Overriding the virtual function
+    double calculateArea() const override {
+        cout << "Calculating area in Circle class" << endl;
+        return 3.14 * radius * radius;
+    }
+};
+
+// Derived class 2
+class Rectangle : public Shape {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor
+    Rectangle(double l, double w) : length(l), width(w) {}
+
+    // Overriding the virtual function
+    double calculateArea() const override {
+        cout << "Calculating area in Rectangle class" << endl;
+        return length * width;
+    }
+};
+
+int main() {
+    // Creating objects of derived classes
+    Circle circle(5.0);
+    Rectangle rectangle(4.0, 6.0);
+
+    // Using pointers to base class to demonstrate polymorphism
+    Shape* shapePtr1 = &circle;
+    Shape* shapePtr2 = &rectangle;
+
+    // Calling virtual function to calculate area
+    cout << "Area of Circle: " << shapePtr1->calculateArea() << endl;
+    cout << "Area of Rectangle: " << shapePtr2->calculateArea() << endl;
+
+    return 0;
+}
+
+//Write a Program to illustrate function templates
+#include <iostream>
+
+using namespace std;
+
+// Function template to find the maximum of two values
+template <typename T>
+T findMax(T a, T b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    // Using the function template with different types
+    int intResult = findMax(7, 12);
+    double doubleResult = findMax(3.14, 2.71);
+
+    // Displaying the results
+    cout << "Maximum of 7 and 12: " << intResult << endl;
+    cout << "Maximum of 3.14 and 2.71: " << doubleResult << endl;
+
+    return 0;
+}
