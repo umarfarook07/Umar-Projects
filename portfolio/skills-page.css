@@ -1,0 +1,58 @@
+.skills-page{
+    background-color:rgb(16, 16, 16);
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-logo{
+    font-family: 'Afacad', sans-serif;
+    color: rgb(11, 124, 84);
+    font-size: 60px;
+    font-weight: bold;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.skill-name{
+    font-size: 42px;
+}
+.skill-info{
+    background-color: rgb(22,22,22);
+    color: white;
+    font-family: 'Afacad', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.skill-list{
+    display: flex;
+}
+.skill{
+    padding: 5px;
+    color: gray;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 680px) {
+  .skills{
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .skill-name{
+      font-size: 32px;
+  }
+  .skill{
+      font-size: 22px;
+  }
+}
+
+
