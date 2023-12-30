@@ -1,0 +1,68 @@
+.projects-page{
+    background-color: rgb(16, 16, 16);
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:20px;   
+    cursor: pointer;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-details{
+    font-size: 16px;
+    color: gray;
+}
+.project-name{
+    color: white;
+    font-size: 22px;
+    text-decoration:none;
+}
+
+.project-logo{
+    font-family: 'Londrina Outline', sans-serif;
+    font-weight: lighter;
+    font-size: 100px;
+    position: relative;
+    color: white;
+}
+.project-heading{
+    position: absolute;
+    font-family: 'Afacad', sans-serif;
+    font-size: 60px;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+.project-link {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .projects,
+  .skills{
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .project-logo {
+    margin-left: 0;
+  }
+}
+
