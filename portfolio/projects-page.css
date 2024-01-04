@@ -1,58 +1,73 @@
-.projects-page{
+.projects-page {
     background-color: rgb(16, 16, 16);
 }
 
-.project-logo{
-    font-family: 'Afacad', sans-serif;
-    font-weight: lighter;
-    font-size: 30px;
-    font-weight: bold;
+.project-logo {
+    margin-left: 70px;
     color: white;
-    margin-top: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
-.projects{
+
+.projects {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding:20px;   
-    cursor: pointer;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
-.project-info{
+
+.project-info {
     display: flex;
     flex-direction: column;
     color: white;
-    display: flex;
     padding: 20px;
     background-color: rgb(22, 22, 22);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.project-container{
+
+.project-info:hover {
+    background-color: rgb(22, 22, 22);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transform: scale(0.95); 
+}
+
+.project-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
-.project-details{
+
+.project-details {
     font-size: 16px;
     color: gray;
 }
-.project-name{
-    color: white;
-    font-size: 22px;
-    text-decoration:none;
-}
 
+.project-name {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
 
 .project-link {
     color: white;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 680px) {
-  .projects{
-    grid-template-columns: 1fr;
-    margin-left: 0;
-  }
-
-  .project-logo {
-    margin-left: 0;
-  }
+.project-link:hover {
+    text-decoration: underline;
 }
 
+@media only screen and (max-width: 680px) {
+    .projects {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .project-logo {
+        margin-left: 0;
+    }
+}
