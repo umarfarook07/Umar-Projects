@@ -1,223 +1,105 @@
-*{
+* {
     font-family: 'Afacad', sans-serif;
-}
-
-p {
-
-    font-family: 'Afacad', sans-serif;
-    margin: 0;
-}
-
-body {
     margin: 0;
     padding: 0;
 }
 
-.index-page {
+.index-page, .header {
     background-color: rgb(42, 42, 42);
-    padding: 12px;
+    padding: 20px;
 }
 
 .header {
     display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo-pic{
-    height: 50px;
-    width: 100%;
-    object-fit: cover;
-}
-.options-div {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.option {
-    margin: 0px 10px;
+
+.logo-pic {
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+}
+
+.options-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.options-div li {
+    margin: 0 15px;
     cursor: pointer;
     color: white;
-    font-size: small;
+    font-size: 14px; 
+    font-weight: bold;
 }
 
 .description {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .job {
-    font-size: 34px;
+    font-size: 36px;
     font-weight: bold;
 }
+
 .dev-info {
     display: flex;
-    margin: 70px 0px;
+    margin: 50px 0;
     flex-direction: column;
     color: white;
     padding: 16px 40px;
     justify-content: space-between;
     align-items: start;
-
 }
 
-.main-details{
+.main-details {
     display: flex;
     flex-direction: row;
-    //justify-content: center;
     align-items: center;
 }
 
-.main-details img{
+.main-details img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-}
-
-.contact-me {
-
-    width: 120px;
-    background-color: rgb(11, 124, 84);
-    border: none;
-    padding: 10px 0px;
-    color: white;
-    font-family: ;
-    font-family: 'Afacad', sans-serif;
-    margin-top: 8px;
-    cursor: pointer;
+    margin-right: 20px;
 }
 
 .details-div {
     display: flex;
+    
 }
 
 .details {
-    padding: 12px 24px
+    padding: 12px 24px;
 }
 
 .top-text {
     color: white;
-    font-size: 12px;
-    margin-bottom: 8px;
+    font-size: 14px; 
+    margin-bottom: 10px;
 }
 
 .bottom-text {
-    font-size: 10px;
+    font-size: 12px;
     color: grey;
-}
-.third-page {
-    background-color: rgb(16, 16, 16);
-    padding: ;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 12px 20px;
-    margin-left: 50px;
-    cursor: pointer;
-    column-gap: 10px;
-    row-gap: 10px;
-}
-
-.project-logo{
-    margin-left: 70px;
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 20px;
-
-}
-
-.project-info {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    display: flex;
-    padding: 20px;
-    background-color: rgb(22, 22, 22);
-}
-
-.project-info:hover {
-    background-color: rgb(22, 22, 22);
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-details {
-    font-size: 16px;
-    color: gray;
-}
-
-.project-name {
-    color: white;
-    font-size: 22px;
-    text-decoration:none;
-}
-
-.project-logo{
-    font-family: 'Londrina Outline', sans-serif;
-    font-weight: lighter;
-    font-size: 100px;
-    position: relative;
-}
-
-.project-heading {
-    position: absolute;
-    font-family: 'Afacad', sans-serif;
-    font-size: 60px;
-    bottom: 0;
-    left: 0;
-    color: white;
-    font-weight: bold;
-
-
-}
-
-.project-link {
-    color: white;
-    text-decoration: none;
 }
 
 @media only screen and (max-width: 680px) {
-  .front-page {
-    padding: 8px;
-  }
+    .index-page {
+        padding: 15px;
+    }
 
-  .content {
+    .header {
+        padding: 15px;       
+    }
+    .details-div {
+    margin-top: 10px;
     flex-direction: column;
-  }
+}
 
-  .details-div {
-    flex-direction: column;
-  }
-
-  .info {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .info2 {
-    grid-template-columns: 1fr;
-  }
-
-  .dev-img {
-    width: 100%;
-    height: auto;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-    margin-left: 0;
-  }
-
-  .project-logo {
-    margin-left: 0;
-  }
+    
 }
