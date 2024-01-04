@@ -10,10 +10,10 @@ body {
     background-color: #fff;
 }
 a {
-    color: #007BFF; /* Default link color */
+    color: #007BFF; 
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
