@@ -1,58 +1,74 @@
-.skills-page{
-    background-color:rgb(16, 16, 16);
+.skills-page {
+    background-color: rgb(16, 16, 16);
+    width: 100%;
+    padding: 50px 0; /* Adjust as needed */
 }
-.skill-container{
+
+.skill-logo {
+    font-family: 'Afacad', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.skill-info {
+    color: white;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.skill-info:hover {
+    background-color: #3c3c3c;
+}
+
+.skill-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-.skill-logo{
-    font-family: 'Afacad', sans-serif;
-    color: rgb(11, 124, 84);
-    font-size: 60px;
-    font-weight: bold;
-}
-.skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 12px 20px;
-    column-gap: 10px;
-    row-gap: 10px;
-}
-.skill-name{
-    font-size: 42px;
-}
-.skill-info{
-    background-color: rgb(22,22,22);
-    color: white;
-    font-family: 'Afacad', sans-serif;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    
 }
 
-.skill-list{
+.skill-name {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.skill {
+    border: 2px solid #f70a0a;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+    border-color: #ff4500;
+    color: #ff4500;
+}
+
+.skill-list {
     display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
 }
-.skill{
-    padding: 5px;
-    color: gray;
-    font-size: 32px;
-}
+
 
 @media only screen and (max-width: 680px) {
-  .skills{
-    grid-template-columns: 1fr;
-    margin: 0;
-  }
-  .skill-name{
-      font-size: 32px;
-  }
-  .skill{
-      font-size: 22px;
-  }
+    .skill{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
-
-

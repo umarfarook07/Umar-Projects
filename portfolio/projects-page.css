@@ -1,6 +1,15 @@
 .projects-page{
     background-color: rgb(16, 16, 16);
 }
+
+.project-logo{
+    font-family: 'Afacad', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
 .projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -19,9 +28,6 @@
 }
 .project-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .project-details{
     font-size: 16px;
@@ -33,22 +39,7 @@
     text-decoration:none;
 }
 
-.project-logo{
-    font-family: 'Londrina Outline', sans-serif;
-    font-weight: lighter;
-    font-size: 100px;
-    position: relative;
-    color: white;
-}
-.project-heading{
-    position: absolute;
-    font-family: 'Afacad', sans-serif;
-    font-size: 60px;
-    bottom: 0;
-    left: 0;
-    color: white;
-    font-weight: bold;
-}
+
 .project-link {
     color: white;
     text-decoration: none;
