@@ -13,6 +13,10 @@ body {
 header {
     background-color: rgb(42, 42, 42);
     padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .options-div ul {
@@ -40,6 +44,7 @@ header {
 .main-details {
     display: flex;
     align-items: center;
+    margin-top: 16px;
 }
 
 .dev-img img {
