@@ -19,7 +19,7 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
 
     reverse(arr, 0, size - 1);
-    reverse(arr, 0, k - 1);  // Fix: change loop condition to start < k
+    reverse(arr, 0, k - 1); 
     reverse(arr, k, size - 1);
 
     for (int i = 0; i < size; i++) {
