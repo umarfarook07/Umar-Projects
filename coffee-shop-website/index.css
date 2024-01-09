@@ -1,0 +1,61 @@
+header .container {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+}
+.logo a {
+    font-weight: 700;
+    font-size: 30px;
+}
+.container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+ul li {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-bar-2 {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-bar-2 button {
+    cursor: pointer;
+}
+.search-button,
+.cart-button {
+    background-color: transparent;
+    border: 1px solid #e6cfc8;
+    padding: 12px;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4d2e20;
+}
+.Log-in-button {
+    padding: 15px 18px;
+    background-color: #4d2e20;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.nav-bar-2 button i {
+    font-size: 22px;
+}
