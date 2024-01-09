@@ -9,6 +9,7 @@
 body {
     background-color: #f5f2f1;
     height: 100vh;
+    padding-top: 100px;
 }
 a {
     text-decoration: none;
