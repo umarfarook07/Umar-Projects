@@ -2,47 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="index.css">
+     <!-- ........Google Fonts........-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="example.css">
+    <title>Page title</title>
 </head>
 <body>
     <div class="container">
-        <div class="input">
-            <div class="display js-input-box" id="display"></div>
-        </div>
-        <div class="buttons">
-            <div class="row">
-                <button onclick="clearDisplay()" class="input-button js-input-button">C</button>
-                <button onclick="appendToDisplay('%')" class="input-button js-input-button">%</button>
-                <button onclick="backspace()" class="input-button js-input-button">&#x232B;</button>
-                <button onclick="appendToDisplay('/')" class="input-button js-input-button sign">/</button>
-            </div>
-            <div class="row">
-                <button onclick="appendToDisplay('7')" class="input-button js-input-button">7</button>
-                <button onclick="appendToDisplay('8')" class="input-button js-input-button">8</button>
-                <button onclick="appendToDisplay('9')" class="input-button js-input-button">9</button>
-                <button onclick="appendToDisplay('*')" class="input-button js-input-button sign">x</button>
-            </div>
-            <div class="row">
-                <button onclick="appendToDisplay('4')" class="input-button js-input-button">4</button>
-                <button onclick="appendToDisplay('5')" class="input-button js-input-button">5</button>
-                <button onclick="appendToDisplay('6')" class="input-button js-input-button">6</button>
-                <button onclick="appendToDisplay('-')" class="input-button js-input-button sign">-</button>
-            </div>
-            <div class="row">
-                <button onclick="appendToDisplay('1')" class="input-button js-input-button">1</button>
-                <button onclick="appendToDisplay('2')" class="input-button js-input-button">2</button>
-                <button onclick="appendToDisplay('3')" class="input-button js-input-button">3</button>
-                <button onclick="appendToDisplay('+')" class="input-button js-input-button sign">+</button> 
-            </div>
-            <div class="last-row">
-                <button onclick="appendToDisplay('0')" class="input-button js-input-button zero">0</button>
-                <button onclick="appendToDisplay('.')" class="input-button js-input-button">.</button>
-                <button onclick="calculateResult()" class="input-button js-input-button sign">=</button>
-            </div>
-        </div>
+    <textarea class="js-input-display" readonly></textarea>
+    <div class="button-container">
+        <div class="grid-row">
+        <button class="js-button-input" onclick="updateValue('1')">1</button>
+        <button class="js-button-input" onclick="updateValue('2')">2</button>
+        <button class="js-button-input"  onclick="updateValue('3')">3</button>
+        <button class="js-button-input sign-btn" onclick="updateValue('+')">+</button>
+         <button class="js-button-input" onclick="updateValue('4')">4</button>
+        <button class="js-button-input" onclick="updateValue('5')">5</button>
+        <button class="js-button-input" onclick="updateValue('6')">6</button>
+        <button class="js-button-input sign-btn" onclick="updateValue('-')">-</button>
+        <button class="js-button-input" onclick="updateValue('7')">7</button>
+        <button class="js-button-input" onclick="updateValue('8')">8</button>
+        <button class="js-button-input" onclick="updateValue('9')">9</button>
+        <button class="js-button-input sign-btn" onclick="updateValue('*')">*</button>
+        <button class="js-button-input" onclick="updateValue('0')">0</button>
+        <button class="js-clear-button" onclick="updateValue('.')">.</button>
+        <button class="js-button-input" onclick="calculateResults()">=</button>
+        <button class="js-equal-button sign-btn" onclick="updateValue('/')">/</button>
+    </div>   
+    <div class="last-row">
+        <button class="js-button-input lastrow-btn" onclick="clearConsole()">Clear</button>
+     <button onclick="backspace()" class=" lastrow-btn js-clear-button">&#x232B;</button>
     </div>
-    <script src="index.js"></script>
+    
+    <script src="example.js"></script>
 </body>
 </html>
