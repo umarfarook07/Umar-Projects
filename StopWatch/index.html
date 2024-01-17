@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-div">
+            <div class="timer">
+                <span class="hour">00</span>:
+                <span class="minutes">00</span>:
+                <span class="seconds">00</span>:
+                <span class="milliseconds">0</span>
+            </div>
+            <div class="buttons">
+                <button class="start-btn" onclick="startStopwatch()">Start</button>
+                <button class="lap-btn" onclick="recordLap()">Lap</button>                
+                <button class="reset-btn" onclick="resetStopwatch()">Reset</button>
+            </div>
+            <ul class="lap-times"></ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
