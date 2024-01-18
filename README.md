@@ -13,3 +13,6 @@ E-Commerce Website : https://umarfarook07.github.io/Umar-Projects/E-Commerce-Web
 
 StopWatch :
 https://umarfarook07.github.io/Umar-Projects/StopWatch/
+
+Netflix-Clone:
+https://umarfarook07.github.io/Umar-Projects/Netflix%20Clone/Landing-Page/
