@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 20px;
+}
+.logo {
+    width: 120px;
+    height: auto;
+}
+.sign-in-btn,
+.cta-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 26px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sign-in-btn:hover,
+.cta-btn:hover {
+    background-color: #d30813;
+}
+main {
+    background: url('/images/IN-en-20240108-popsignuptwoweeks-perspective_alpha_website_small (1).jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section {
+    text-align: center;
+    color: white;
+}
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.hero-section h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.email-input{
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-right: 12px;
+    color: white;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.3) inset;
+}
+
+.email-input::placeholder {
+    color: white;
+    
+}
