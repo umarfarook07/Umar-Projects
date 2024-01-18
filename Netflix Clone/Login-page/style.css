@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.netflix-logo {
+    width: 120px;
+    height: auto;
+}
+
+.sign-in-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 26px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+    background-color: #d30813;
+}
+
+main {
+     background: url('/images/IN-en-20240108-popsignuptwoweeks-perspective_alpha_website_small (1).jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-section {
+    text-align: left;
+    color: white;
+    margin-top: 100px;
+    padding: 30px 45px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:350px; 
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+    display: grid;
+    gap: 20px;
+}
+
+.login-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3) inset;
+    width: 100%;
+}
+
+.input-box::placeholder {
+    color: white;
+}
+
+.lower-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input {
+    margin-right: 8px;
+}
+
+.need-help span {
+    font-size: 14px;
+}
+.description {
+    width: 100%;
+   // max-width: 100%;
+}
+.description p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.Sign-up-link span{
+    color: white;
+    font-weight: bold;
+}
+
+.learn-more-link span{
+    color: blue;
+}
