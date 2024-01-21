@@ -16,3 +16,6 @@ https://umarfarook07.github.io/Umar-Projects/StopWatch/
 
 Netflix-Clone:
 https://umarfarook07.github.io/Umar-Projects/Netflix%20Clone/Landing-Page/
+
+Whether-App:
+https://umarfarook07.github.io/Umar-Projects/Whether-App/
