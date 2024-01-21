@@ -2,50 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Website By Umar</title>
+    <title>Capital Shop</title>
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
-    <div class="first-page">
-        <div class="header">
-            <div class="left-section">
-                <div class="logo"><h1>Men's<span>Clothes</span></h1></div>
-            </div>
-            
-            <div class="right-section">
-                <div class="search-box">
-                    <input type="text" class="search-bar">
-                    <button class="search-button"><i class='bx bx-search'></i></button>
-                </div>
-                <div class="my-cart"><button class="my-cart-button">My Cart</button></div>
-            </div>
+    <header>
+        <div class="product-logo">
+            <img class="logo-img" src="/Images/logo.png.webp" alt=""></img>
         </div>
-        <div class="main-container">
-            <div class="container-head">
-            <button>Tops</button>
-            <button>Sweaters</button>
-            <button>Jeans</button>
-            <button>Jackets</button>
-            <button>Shorts</button>
+        <nav class="nav-bar">
+            <div class="search-btn-div">                
+                <button class="search-btn" id="js-search-btn">
+                    <i class='bx bx-search'></i>
+                </button>
+               
             </div>
-            <div class="product-container">
-                <div class="left-product">
-    <img src="/Umar-Projects/E-Commerce-Website/product-images/product-image4.jpeg" alt="Left Image">
-</div>
-<div class="right-product">
-    <div class="product">
-        <img src="/Umar-Projects/E-Commerce-Website/product-images/product-image1.jpg" alt="Top Image">
-    </div>
-    <div class="product">
-        <img src="/Umar-Projects/E-Commerce-Website/product-images/product-image3.avif" alt="Bottom Image">
-    </div>
-</div>
+            <div class="user-btn">
+                <a href="#">
+                <button>
+                    <i class='bx bxs-user'></i>
+                </button>
+                </a>
             </div>
-        </div>
-        
-    </div>
+            <div class="cart-btn">
+                <a href="#">
+                <button>
+                    <i class='bx bxs-cart' ></i>
+                </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-row">
+            <div class="menu-div">
+                <button class="menu-btn">MENU
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+             <div class="search-box" id="js-search-box">                 
+             </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-logo">
+            <img src="/Images/logo2_footer.png.webp" alt=""></img>
+        </section>
+        <section class="links-sections"> 
+            <div class="link">
+                <h1>Men's Section</h1>
+                <a href="#">Clothing Fashion</a>
+                <a href="#">Winter</a>
+                <a href="#">Summer</a>
+                <a href="#">Formal</a>
+                <a href="#">Casual</a>
+            </div>
+            <div class="link">
+                <h1>Women's Section</h1>
+                <a href="#">Clothing Fashion</a>
+                <a href="#">Winter</a>
+                <a href="#">Summer</a>
+                <a href="#">Formal</a>
+                <a href="#">Casual</a>
+            </div>
+            <div class="link">
+                <h1>Baby's Collection</h1>
+                <a href="#">Clothing Fashion</a>
+                <a href="#">Winter</a>
+                <a href="#">Summer</a>
+                <a href="#">Formal</a>
+                <a href="#">Casual</a>
+            </div>
+            <div class="link">
+                <h1>Quick Links</h1>
+                <a href="#">Track Your Order</a>
+                <a href="#">Support</a>
+                <a href="#">FAQ</a>
+                <a href="#">carrier</a>
+                <a href="#">about</a>
+                <a href="/Contact Me/index.html" target="_blank">Contact Us</a>
+            </div>            
+        </section>
+        <section class="copyright-section">
+            <span>Copyright &copy; 2024 All rights reserved</span>            
+        </section>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
