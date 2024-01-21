@@ -1,185 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-body{
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(249, 246, 241);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Poppins', sans-serif; 
 }
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+body{    
+    background-color: rgb(249, 246, 241);      
+    height: 100vh;    
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
     position: fixed;
+    background-color: rgb(249, 246, 241);     
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(249, 246, 241);
+    z-index: 1000;  
+    border-bottom: 2px solid grey;
 }
-
-.logo span{
-    color:gray;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-}
-.right-section{
+header,
+nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    
 }
-
-.right-section div{
-    margin-right: 10px;
+header nav button{
+    margin: 0 10px;
+}
+.product-logo,
+.footer-logo{
+    width: 300px;
+    height: auto;
+    padding: 18px;
+}
+.product-logo img{
+    width: 100%;
+}
+.nav-bar button{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+}
+.nav-bar button:hover {
+    color: red;
+    transform: scale(0.9);
+}
+.nav-bar button i{
+    font-size: 50px;
+}
+main{
+    margin-top: 120px;
+}
+.menu-row {
+    position: relative;
+    background-color: rgb(71, 71, 71);
+    padding: 25px 15px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-}
-.search-bar{
-    height: 42px;
-    border: none;
-    background-color: rgb(250, 250, 250);
-    width: 400px;
-    font-size: 22px;
-}
-.search-button{
-    height: 44px;
-    margin-left: -5pxpx;
-    cursor: pointer;
-    border: none;
-    background-color:rgb(250, 250, 250);
-    margin-right: 20px;
 }
 
 .search-box{
-    display: flex;
-    flex-direction: row;
-    flex: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    max-width: 75%;
+    z-index: 100;
+    transition: all 0.3s ease ;
 }
-
-.my-cart{
-    
-}
-.my-cart-button{
-    padding: 8px 16px;
-    cursor: pointer;
-    background-color: black;
-    border: 1px solid black;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-
-.main-container{
-    margin: 0 50px;
-    padding: 10px;
-    border: 1px solid black;
-    max-width: 1080px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
-}
-.container-head{
-    margin-bottom: 15px;
-}
-
-.product-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr; /* 75% and 25% */
-    flex: 1;
-}
-
-.product-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr; /* 75% and 25% */
-    flex: 1;
-}
-
-.left-product {
-    display: flex;
-    height: 400px;
-    margin-right: 10px;
-    flex: 3;
-}
-
-.right-product {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    flex: 1;
-}
-
-.product {
-    background-color: lightgreen;
-    height: 195px;
-}
-
-.left-product img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-.product-container {
-    display: grid;
-    grid-template-columns: 6fr 4fr; 
-    flex: 1;
-}
-
-.left-product {
-    display: flex;
-    height: 400px;
-    margin-right: 10px;
-    flex: 6; 
-    min-width: 300px;
-}
-
-.right-product {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    flex: 4; 
-    min-width: 300px;
-}
-
-.product {
-    background-color: lightgreen;
-    height: 195px;
-}
-
-.left-product img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    object-position: left;
-}
-
-.right-product img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    object-position: left;
-}
-
-.container-head button{
+.cancel-btn{
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: 120;
+    padding: 6px;
+    font-size: 22px;
     background-color: transparent;
     border: none;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
-    transition: background-color 0.15s,color 0.15s,border-radius 0.15s;
-    padding: 5px 10px;
-
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.search-box input{
+    width: 100%;
+    background-color: red ;
+    color: white;
+    height: 20px;
+    padding: 6px;
+    border: none;      
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+input::placeholder{
+    color: white;
+    font-weight: bold;
 }
 
-.container-head button:hover{
+.menu-btn {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(20, 26, 33);
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+footer{
     background-color: black;
     color: white;
-    border-radius: 5px;
+}
+.links-sections{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    margin: 10px auto;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 10px;          
+}
+.copyright-section{
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.link a{
+    color: gray;
+    font-weight:lighter;  
+    margin: 3px 0;
+}
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        flex-direction: column; 
+    }
+    main{
+    margin-top: 150px;
+}
+    .product-logo,
+    .footer-logo{
+        width: 50%;
+        
+    }  
+    .nav-bar button{
+    width: 50px;
+    height: 50px;    
+   }          
+   .nav-bar button i{
+    font-size: 30px;
+   }
+
+    .search-box {
+        width: 60%; 
+        left: 40%;
+    }
+
+    .cancle-btn {
+        right: 5px; 
+    }
+    .link-section{
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        text-align: center;
+    }
+    .copyright-section{
+        font-size: 12px;
+    }
 }
