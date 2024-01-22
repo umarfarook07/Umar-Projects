@@ -2,34 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Capital Shop</title>
+    <title>Capital Shop - Fashion for All</title>
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <div class="product-logo">
-            <img class="logo-img" src="/Images/logo.png.webp" alt=""></img>
+            <img class="logo-img" src="/Images/logo.png.webp" alt="Capital Shop Logo">
         </div>
         <nav class="nav-bar">
             <div class="search-btn-div">                
                 <button class="search-btn" id="js-search-btn">
                     <i class='bx bx-search'></i>
-                </button>
-               
+                </button>               
             </div>
             <div class="user-btn">
-                <a href="#">
-                <button>
-                    <i class='bx bxs-user'></i>
-                </button>
+                <a href="#" target="_blank">
+                    <button>
+                        <i class='bx bxs-user'></i>
+                    </button>
                 </a>
             </div>
             <div class="cart-btn">
-                <a href="#">
-                <button>
-                    <i class='bx bxs-cart' ></i>
-                </button>
+                <a href="#" target="_blank">
+                    <button>
+                        <i class='bx bxs-cart'></i>
+                    </button>
                 </a>
             </div>
         </nav>
@@ -37,51 +36,77 @@
     <main>
         <section class="menu-row">
             <div class="menu-div">
-                <button class="menu-btn">MENU
+                <button class="menu-btn" id="js-menu-btn">MENU
                     <i class='bx bx-menu'></i>
                 </button>
+            </div>
+            <div class="menu-list" id="js-menu-list">                
             </div>
              <div class="search-box" id="js-search-box">                 
              </div>
         </section>
+        <section class="hero-section">
+            <div class="collection-grid">
+                <div class="mens-collection">
+                    <img class="collection-img" src="/Images/items1.jpg.webp" alt="Men's Collection">
+                    <span>Men's Collection</span>
+                </div>
+                <div class="womens-collection">
+                    <img class="collection-img" src="/Images/items2.jpg.webp" alt="Women's Collection">
+                    <span>Women's Collection</span>
+                </div>
+                <div class="baby-collection">
+                    <img class="collection-img" src="/Images/items3.jpg.webp" alt="Baby's Collection">
+                    <span>Baby's Collection</span>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <section class="footer-logo">
-            <img src="/Images/logo2_footer.png.webp" alt=""></img>
-        </section>
         <section class="links-sections"> 
+            <section class="footer-logo">
+            <img src="/Images/logo2_footer.png.webp" alt="Capital Shop Footer Logo">
+        </section>
             <div class="link">
                 <h1>Men's Section</h1>
-                <a href="#">Clothing Fashion</a>
-                <a href="#">Winter</a>
-                <a href="#">Summer</a>
-                <a href="#">Formal</a>
-                <a href="#">Casual</a>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>                                                                            
             </div>
             <div class="link">
                 <h1>Women's Section</h1>
-                <a href="#">Clothing Fashion</a>
-                <a href="#">Winter</a>
-                <a href="#">Summer</a>
-                <a href="#">Formal</a>
-                <a href="#">Casual</a>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>                                           
             </div>
             <div class="link">
                 <h1>Baby's Collection</h1>
-                <a href="#">Clothing Fashion</a>
-                <a href="#">Winter</a>
-                <a href="#">Summer</a>
-                <a href="#">Formal</a>
-                <a href="#">Casual</a>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>                                           
             </div>
             <div class="link">
                 <h1>Quick Links</h1>
-                <a href="#">Track Your Order</a>
-                <a href="#">Support</a>
-                <a href="#">FAQ</a>
-                <a href="#">carrier</a>
-                <a href="#">about</a>
-                <a href="/Contact Me/index.html" target="_blank">Contact Us</a>
+                <ul>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/Contact Me/index.html" target="_blank">Contact Us</a></li>                  
+                </ul>                                                                                               
             </div>            
         </section>
         <section class="copyright-section">
