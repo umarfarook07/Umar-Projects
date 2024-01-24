@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <title>Capital Shop - Fashion for All</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="hero-trending.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
+        <!-- Logo -->
         <div class="product-logo">
             <img class="logo-img" src="/Images/logo.png.webp" alt="Capital Shop Logo">
         </div>
+        <!-- Navigation Bar -->
         <nav class="nav-bar">
+            <!-- Search Button -->
             <div class="search-btn-div">                
                 <button class="search-btn" id="js-search-btn">
                     <i class='bx bx-search'></i>
                 </button>               
             </div>
+            <!-- User Button -->
             <div class="user-btn">
                 <a href="#" target="_blank">
                     <button>
@@ -24,6 +36,7 @@
                     </button>
                 </a>
             </div>
+            <!-- Cart Button -->
             <div class="cart-btn">
                 <a href="#" target="_blank">
                     <button>
@@ -33,20 +46,46 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main Content Section -->
     <main>
+        <!-- Menu Row Section -->
         <section class="menu-row">
+            <!-- Menu Button -->
             <div class="menu-div">
-                <button class="menu-btn" id="js-menu-btn">MENU
-                    <i class='bx bx-menu'></i>
+                <button class="menu-btn" id="js-menu-btn">
+                    MENU <i class='bx bx-menu'></i>
                 </button>
             </div>
+            <!-- Menu List Placeholder -->
             <div class="menu-list" id="js-menu-list">                
             </div>
-             <div class="search-box" id="js-search-box">                 
-             </div>
+            <!-- Search Box Placeholder -->
+            <div class="search-box" id="js-search-box">                 
+            </div>
         </section>
-        <section class="hero-section">
+
+        <!-- Landing Section with Swiper -->
+        <section class="landing-section">
+            <div class="swiper mySwiper">
+                <!-- Swiper Wrapper for Slides -->
+                <div class="swiper-wrapper">
+                    <!-- First Slide -->
+                    <div class="swiper-slide"><img src="/Images/product-image2.jpg" alt=""></div>
+                    <!-- Second Slide -->
+                    <div class="swiper-slide"><img src="/Images/product-image3.avif" alt=""></div>
+                </div>
+                <!-- Swiper Navigation Buttons -->
+                <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div>
+            </div>
+        </section>
+
+        <!-- Hero Section with Collection Grid -->
+        <section class="hero-section">            
+            <!-- Collection Grid for Men's, Women's, and Baby's Collections -->
             <div class="collection-grid">
+                <!-- Men's Collection -->
                 <div class="mens-collection">
                     <img class="collection-img" src="/Images/items1.jpg.webp" alt="Men's Collection">
                     <span>Men's Collection</span>
@@ -61,14 +100,37 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <section class="links-sections"> 
-            <section class="footer-logo">
-            <img src="/Images/logo2_footer.png.webp" alt="Capital Shop Footer Logo">
+
+        <!-- Trending Section -->
+        <section class="trending-section">
+            <!-- Trending Header with Navigation -->
+            <div class="trending-header">
+                <h1>Trending This Week</h1>
+                <nav class="collection-nav">
+                    <!-- Navigation Links -->
+                    <ul>
+                        <a href="#"><li>Men's</li></a>
+                        <a href="#"><li>Women's</li></a>
+                        <a href="#"><li>Baby</li></a>
+                        <a href="#"><li>Fashion</li></a>
+                    </ul>
+                </nav>
+            </div>
         </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Links Sections -->
+        <section class="links-sections"> 
+            <!-- Footer Logo -->
+            <section class="footer-logo">
+                <img src="/Images/logo2_footer.png.webp" alt="Capital Shop Footer Logo">
+            </section>
+            <!-- Links for Men's, Women's, Baby's, and Quick Links -->
             <div class="link">
                 <h1>Men's Section</h1>
+                <!-- Men's Section Links -->
                 <ul>
                     <li><a href="#">Clothing Fashion</a></li>
                     <li><a href="#">Winter</a></li>
@@ -77,7 +139,7 @@
                     <li><a href="#">Casual</a></li>
                 </ul>                                                                            
             </div>
-            <div class="link">
+             <div class="link">
                 <h1>Women's Section</h1>
                 <ul>
                     <li><a href="#">Clothing Fashion</a></li>
@@ -108,11 +170,27 @@
                     <li><a href="/Contact Me/index.html" target="_blank">Contact Us</a></li>                  
                 </ul>                                                                                               
             </div>            
+           
         </section>
+
+        <!-- Copyright Section -->
         <section class="copyright-section">
+            <!-- Copyright Information -->
             <span>Copyright &copy; 2024 All rights reserved</span>            
         </section>
     </footer>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <!-- Swiper Initialization Script -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>
