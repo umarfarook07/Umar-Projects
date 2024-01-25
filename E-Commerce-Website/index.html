@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="hero-trending.css">
+    <link rel="stylesheet" href="trending.css">
     <link rel="stylesheet" href="responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- Header Section -->
@@ -46,7 +46,6 @@
             </div>
         </nav>
     </header>
-
     <!-- Main Content Section -->
     <main>
         <!-- Menu Row Section -->
@@ -64,32 +63,31 @@
             <div class="search-box" id="js-search-box">                 
             </div>
         </section>
-
         <!-- Landing Section with Swiper -->
         <section class="landing-section">
-            <div class="swiper mySwiper">
-                <!-- Swiper Wrapper for Slides -->
-                <div class="swiper-wrapper">
-                    <!-- First Slide -->
-                    <div class="swiper-slide"><img src="/Images/product-image2.jpg" alt=""></div>
-                    <!-- Second Slide -->
-                    <div class="swiper-slide"><img src="/Images/product-image3.avif" alt=""></div>
-                </div>
-                <!-- Swiper Navigation Buttons -->
-                <div class="swiper-button-next nav-btn"></div>
-                <div class="swiper-button-prev nav-btn"></div>
-            </div>
+             <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/Images/istockphoto-1293600593-1024x1024~2.jpg" />
+      </div>      
+      <div class="swiper-slide">
+        <img src="/Images/istockphoto-1050887796-1024x1024~2.jpg" />     
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
         </section>
-
         <!-- Hero Section with Collection Grid -->
         <section class="hero-section">            
             <!-- Collection Grid for Men's, Women's, and Baby's Collections -->
             <div class="collection-grid">
-                <!-- Men's Collection -->
-                <div class="mens-collection">
-                    <img class="collection-img" src="/Images/items1.jpg.webp" alt="Men's Collection">
-                    <span>Men's Collection</span>
-                </div>
+                <!-- Men's Collection -->     
+                 <div class="mens-collection">
+                    <img class="collection-img" src="/Images/items1.jpg.webp" alt="men's Collection">
+                    <span>Women's Collection</span>
+                </div>          
                 <div class="womens-collection">
                     <img class="collection-img" src="/Images/items2.jpg.webp" alt="Women's Collection">
                     <span>Women's Collection</span>
@@ -100,25 +98,73 @@
                 </div>
             </div>
         </section>
-
-        <!-- Trending Section -->
+          <!-- Trending Section -->
         <section class="trending-section">
-            <!-- Trending Header with Navigation -->
-            <div class="trending-header">
-                <h1>Trending This Week</h1>
-                <nav class="collection-nav">
-                    <!-- Navigation Links -->
-                    <ul>
-                        <a href="#"><li>Men's</li></a>
-                        <a href="#"><li>Women's</li></a>
-                        <a href="#"><li>Baby</li></a>
-                        <a href="#"><li>Fashion</li></a>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+    <div class="trending-header">
+        <h1>Trending This Week</h1>
+        <div class="collection-nav">
+            <form id="categoryForm">
+                <input type="radio" name="category" id="mens" value="mens" checked hidden>
+                <label for="mens" class="category-button">Men's</label>
+                <input type="radio" name="category" id="womens" value="womens" hidden>
+                <label for="womens" class="category-button">Women's</label>
+                <input type="radio" name="category" id="baby" value="baby" hidden>
+                <label for="baby" class="category-button">baby</label>               
+            </form>
+        </div>                                    
+    </div>            
+    <div class="swiper2 mySwiper2" id="mensSlider">
+        <!-- Men's slider content -->
+        <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/Images/product-image-04.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-02.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-03.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-04.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+  </div>
+    </div>
+    <div class="swiper2 mySwiper2" id="womensSlider" style="display:none;">
+        <!-- Women's slider content -->
+        <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/Images/product-image-04.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-02.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-03.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-04.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+  </div>      
+    </div>
+    <div class="swiper2 mySwiper2" id="babySlider" style="display:none;">
+        <!-- Women's slider content -->
+        <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/Images/product-image-04.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-02.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-03.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+      <div class="swiper-slide"><img src="/Images/product-image-04.jpeg" alt=""></img>
+      <div class="shop-now-button">Shop Now</div>
+      </div>
+    </div>    
+</section>        
     </main>
-
     <!-- Footer Section -->
     <footer>
         <!-- Links Sections -->
@@ -172,25 +218,16 @@
             </div>            
            
         </section>
-
         <!-- Copyright Section -->
         <section class="copyright-section">
             <!-- Copyright Information -->
             <span>Copyright &copy; 2024 All rights reserved</span>            
         </section>
     </footer>
-
     <!-- Scripts -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
-    <!-- Swiper Initialization Script -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
 </body>
 </html>
