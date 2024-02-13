@@ -5,15 +5,15 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;  
     border-bottom: 2px solid grey;
+    width: 100%;
 }
 
 header, nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header nav button {
@@ -21,8 +21,7 @@ header nav button {
 }
 
 .product-logo, .footer-logo {
-    width: 300px;
-    height: auto;
+    width:200px;
     padding: 18px;
 }
 
@@ -31,8 +30,7 @@ header nav button {
 }
 
 .nav-bar button {
-    width: 80px;
-    height: 80px;
+    width:50px;
     background-color: transparent;
     border: none;
 }
@@ -43,7 +41,7 @@ header nav button {
 }
 
 .nav-bar button i {
-    font-size: 50px;
+    font-size:25px;
 }
 /* Menu Styles */
 

@@ -1,90 +1,113 @@
-/* Responsive Design Styles */
-@media only screen and (max-width: 768px) {
+/* Styles for extra small devices (phones, less than 576px) */
+/* No additional rules needed since the base styles apply */
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     body {
-        font-size: 14px; 
+        font-size: 16px;
     }
-
-    header {
-        flex-direction: column; 
-    }
-
-    main {
-        margin-top: 150px;
-    }
-
-    .product-logo, .footer-logo {
-        width: 50%;
-    }  
-
-    .nav-bar button {
-        width: 50px;
-        height: 50px;    
-    }          
-
-    .nav-bar button i {
-        font-size: 30px;
-    }
-
-    .search-box {
-        width: 60%; 
-        left: 40%;
-    }
-
-    .cancel-btn {
-        right: 5px; 
-    }
-
     .hero-section,
     .trending-section {
-        margin: 0;
+        padding: 20px;
     }
-
+    .nav-bar button {
+        width: 60px;
+        height: 60px;
+    }
+    .nav-bar button i {
+        font-size: 24px;
+    }
+    .search-box {
+        width: 50%;
+        left: 50%;
+    }
     .link-section {
-        grid-template-columns: 1fr;
-        margin-left: 0;
-        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .copyright-section {
-        font-size: 12px;
-    }
-
-    .left-switch,
-    .right-switch {
-        height: 50px;
-        width: 20px;    
-        font-size: 15px;
-    }
-
-    .switch-btns .left-switch {
-        top: 45%;
-    }
-
-    .switch-btns .right-switch {
-        top: 45%;
-    }
-
     .trending-header h1 {
-        font-size: 20px;   
-        margin-bottom: 20px;
+        font-size: 22px;
     }
+}
 
-    .collection-nav ul li {
-        padding: 0 5px;
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 18px;
     }
+    header {
+        flex-direction: row; /* Reset to default for larger screens */
+    }
+    main {
+        margin-top: 100px;
+    }
+    .nav-bar button {
+        width: 70px;
+        height: 70px;
+    }
+    .search-box {
+        width: 50%;
+        left: 50%;
+    }
+    .link-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .trending-header h1 {
+        font-size: 24px;
+    }
+}
 
-    .trending-header {    
-        flex-direction: column;         
-        align-items: flex-start;
-        justify-content: flex-start;
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 20px;
     }
-    .nav-btn {
-    visibility: hidden;
+    .hero-section,
+    .trending-section {
+        padding: 30px;
     }
-  .swiper-pagination-bullet {
-    visibility: visible;
+    .nav-bar button {
+        width: 80px;
+        height: 80px;
     }
-      .swiper2 {     
-      height: 250px;     
-    }  
+    .nav-bar button i {
+        font-size: 36px;
+    }
+    .search-box {
+        width: 80%;
+        left: 10%;
+    }
+    .link-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .trending-header h1 {
+        font-size: 26px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+    .hero-section,
+    .trending-section {
+        padding: 40px;
+    }
+    .nav-bar button {
+        width: 90px;
+        height: 90px;
+    }
+    .nav-bar button i {
+        font-size: 40px;
+    }
+    .search-box {
+        width: 30%;
+        left: 35%;
+    }
+    .link-section {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .trending-header h1 {
+        font-size: 28px;
+    }
 }
