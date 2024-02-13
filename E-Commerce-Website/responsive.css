@@ -1,7 +1,4 @@
-/* Styles for extra small devices (phones, less than 576px) */
-/* No additional rules needed since the base styles apply */
 
-/* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     body {
         font-size: 16px;
@@ -101,8 +98,8 @@
         font-size: 40px;
     }
     .search-box {
-        width: 30%;
-        left: 35%;
+        width: 80%;
+        left: 20%;
     }
     .link-section {
         grid-template-columns: repeat(5, 1fr);
