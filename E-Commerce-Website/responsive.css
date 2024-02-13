@@ -99,7 +99,7 @@
     }
     .search-box {
         width: 80%;
-        left: 20%;
+        left: 50%;
     }
     .link-section {
         grid-template-columns: repeat(5, 1fr);
