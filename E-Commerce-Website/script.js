@@ -13,7 +13,8 @@ document.getElementById('js-search-box').addEventListener('click', function(even
     if (event.target && event.target.id === 'js-cancel-btn') {
         const searchBox = document.getElementById('js-search-box');
         searchBox.classList.remove('show');
-        searchBox.querySelector('input').value = ''; 
+        searchBox.querySelector('input') = '';
+
     }
 });
 
