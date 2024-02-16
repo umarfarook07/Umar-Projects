@@ -9,7 +9,8 @@ YouTube Clone Link : https://umarfarook07.github.io/Umar-Projects/youtube-clone/
 
 Calculator Link : https://umarfarook07.github.io/Umar-Projects/calculator/
 
-E-Commerce Website : https://umarfarook07.github.io/Umar-Projects/E-Commerce-Website/
+E-Commerce Website : https://umarfarook07.github.io/Umar-Projects/E-Commerce-Website/my-react-app/index.html
+
 
 StopWatch :
 https://umarfarook07.github.io/Umar-Projects/StopWatch/
