@@ -1,0 +1,175 @@
+/* header.css */
+header {
+    position: fixed;
+    background-color: rgb(249, 246, 241);     
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid grey;
+    width: 100%;
+}
+
+header, nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav button {
+    margin: 0 10px;
+}
+
+.product-logo, .footer-logo {
+    width:200px;
+    padding: 18px;
+}
+
+.product-logo img {
+    width: 100%;
+}
+
+.nav-bar button {
+    width:50px;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-bar button:hover {
+    color: red;
+    transform: scale(0.9);
+}
+
+.nav-bar button i {
+    font-size:25px;
+}
+/* Menu Styles */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.menu-row {
+    position: relative;
+    background-color: rgb(71, 71, 71);
+    padding: 25px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 75%;
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.cancel-btn {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: 120;
+    padding: 6px;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-box input {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    height: 20px;
+    padding: 6px;
+    border: none;      
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+.menu-btn {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(20, 26, 33);
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+    z-index: 150;
+    transition: all 0.3s ease;
+}
+.menu-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 85px;
+    width: auto;
+    z-index: 149;
+    background-color: rgb(71, 71, 71);
+    padding: 10px 25px;
+    display: none;
+    transition: all 0.3s ease;
+}
+.menu-row:hover,
+.menu-row:focus-within {
+    padding: 25px 15px;
+}
+
+.menu-row:hover .search-box,
+.menu-row:focus-within .search-box {
+    opacity: 1;
+}
+
+.menu-btn:hover,
+.menu-list a:hover {
+    transform: scale(1.1);
+}
+.menu-list a:hover{    
+    color: red;
+}
+
+
+.menu-list.show {
+    display: block;
+    animation: slideIn 0.5s ease-in-out;
+}
+.nav-bar button {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-bar button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+.menu-list li {
+    list-style: none;
+    line-height: 40px;
+
+}
+.menu-list a{
+    width: 100%;
+    transition: all 0.15s ease-in-out;
+}
+
