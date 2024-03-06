@@ -1,15 +1,4 @@
-<h1 align="center">Hi 👋, I'm Umar</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
-
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=umarfarrok07&label=Profile%20views&color=0e75b6&style=flat" alt="umarfarrok07" /> </p>
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/umarfaruk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="umarfaruk" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/umar faruk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="umar faruk" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,14 +41,11 @@
     <li><strong>Weather App:</strong> <a href="https://umarfarook07.github.io/Umar-Projects/Whether-App/">Check the Weather</a></li>
 </ul>
 
-<h2>Connect with Me 🌐</h2>
-
-<p>Let's get social and professional:</p>
-
-<ul>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/umar-faruk-8a79a9282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Umar Farook</a></li>
-    <li><strong>Twitter:</strong> <a href="https://x.com/Umarfaruk_07">@Umarfaruk_07</a></li>
-</ul>
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://x.com/Umarfaruk_07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="umarfaruk" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/umar-faruk-8a79a9282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="umar faruk" height="30" width="40" /></a>
+</p>
 
 <p>Explore my portfolio to see more of my work: <a href="https://umarfarook07.github.io/Umar-Projects/portfolio/">My Portfolio</a></p>
 
