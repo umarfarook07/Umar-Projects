@@ -32,9 +32,9 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://x.com/Umarfaruk_07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="umarfaruk" height="30" width="40" /></a>
-<a href="https://x.com/Umarfaruk_07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="umarfaruk" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/umar-faruk-8a79a9282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="umar faruk" height="30" width="40" /></a>
+<a href="https://x.com/Umarfaruk_07" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="umarfaruk" height="30" width="40" /></a>
+<a href="https://www.instagram.com/umar_farook_70?igsh=OGQ5ZDc2ODk2ZA==" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="umarfaruk" height="30" width="40" /></a>
 </p>
 
 <p>Explore my portfolio to see more of my work: <a href="https://umarfarook07.github.io/Umar-Projects/portfolio/">My Portfolio</a></p>
