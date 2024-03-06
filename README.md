@@ -1,45 +1,13 @@
-Hello, I'm Umar 👋
-Welcome to my GitHub profile! I'm A Full-Stack Web developer, with a passion for Developing Web Related Projecs. Here, you'll find projects ranging from web development, all showcasing my journey and growth as a 
-Full-Stack Web Developer.
+<h1 align="center">Hi 👋, I'm Umar</h1>
+<h3 align="center">A passionate frontend developer from India</h3>
 
-About Me 📖
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=umarfarrok07&label=Profile%20views&color=0e75b6&style=flat" alt="umarfarrok07" /> </p>
 
-I'm currently studying Diploma In Computer Engineering (2022-25). I love to design A Large Scale Projects and am always looking for new challenges that push me outside of my comfort zone.
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/umarfaruk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="umarfaruk" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/umar faruk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="umar faruk" height="30" width="40" /></a>
+</p>
 
-My Skills 💻
-
-- Languages: C/C++, JavaScript.
-- Frameworks & Tools: React, Express .
-- Databases: MongoDb.
-
-Projects
-
-Portfolio Link : https://umarfarook07.github.io/Umar-Projects/portfolio/
-
-Rock-Paper-scissor-game Link : https://umarfarook07.github.io/Umar-Projects/rock-paper-scissor-game/
-
-Todo-List Link : https://umarfarook07.github.io/Umar-Projects/todo-list/
-
-YouTube Clone Link : https://umarfarook07.github.io/Umar-Projects/youtube-clone/
-
-Calculator Link : https://umarfarook07.github.io/Umar-Projects/calculator/
-
-E-Commerce Website : https://umarfarook07.github.io/Umar-Projects/E-Commerce-Website/my-react-app/index.html
-
-StopWatch :
-https://umarfarook07.github.io/Umar-Projects/StopWatch/
-
-Netflix-Clone:
-https://umarfarook07.github.io/Umar-Projects/Netflix%20Clone/Landing-Page/
-
-Whether-App:
-https://umarfarook07.github.io/Umar-Projects/Whether-App/
-
- Social Media 🌎
-
-- LinkedIn: https:https://www.linkedin.com/in/umar-faruk-8a79a9282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-
-- Twitter: https://x.com/Umarfaruk_07
-- Portfolio Link: https://umarfarook07.github.io/Umar-Projects/portfolio/
-
-
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nestjs.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg" alt="nestjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
