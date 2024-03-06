@@ -1,14 +1,5 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=umarfarrok07&label=Profile%20views&color=0e75b6&style=flat" alt="umarfarrok07" /> </p>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umar Farook's Profile</title>
-</head>
-<body>
-
 <h1>Welcome to Umar Farook's GitHub Profile! 👋</h1>
 
 <p>Hello! I'm Umar, a passionate Full-Stack Web Developer dedicated to crafting web solutions that stand out. My GitHub space is a vibrant showcase of my journey, featuring projects that span across various facets of web development. Each repository here marks a step forward in my ongoing path as a Full-Stack Web Developer.</p>
@@ -52,6 +43,3 @@
 <hr>
 
 <p>Thank you for visiting my GitHub profile. Dive into my projects, and let's connect to discuss more, collaborate, or just share insights into the world of web development. Your journey through my repositories is much appreciated, and I look forward to growing and learning with the community!</p>
-
-</body>
-</html>
